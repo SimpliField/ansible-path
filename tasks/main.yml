@@ -1,0 +1,9 @@
+---
+- name: creates directory {{ path }}
+  file:
+    path: "{{ path }}"
+    state: directory
+    owner: "{{ owner }}"↩
+    group: "{{ group }}"↩
+    mode: "{{ mode | default(700) }}"
+  when: path is defined

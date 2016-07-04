@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - role: ansible-path
+      path: /test/db
+      user: travis
+      group: travis
