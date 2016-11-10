@@ -4,5 +4,3 @@
   roles:
     - role: ansible-path
       path: /test/db
-      user: travis
-      group: travis

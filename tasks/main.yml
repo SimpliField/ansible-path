@@ -3,7 +3,7 @@
   file:
     path: "{{ path }}"
     state: directory
-    owner: "{{ owner }}"
-    group: "{{ group }}"
+    owner: "{{ owner | default(omit) }}"
+    group: "{{ group | default(omit) }}"
     mode: "{{ mode | default(700) }}"
   when: path is defined
